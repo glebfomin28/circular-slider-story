@@ -1,0 +1,105 @@
+@use "@/app/styles/media" as *;
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: var(--width-page);
+  height: 100vh;
+  border-right: 1px solid var(--color-line);
+  border-left: 1px solid var(--color-line);
+}
+
+.line_v, .line_h {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  background: var(--color-line);
+}
+
+.line_v {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 100vh;
+  width: 1px;
+}
+
+.line_h {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.title {
+  position: absolute;
+  top: 170px;
+  padding-left: 78px;
+  width: 353px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #3877EE -5%, #EF5DA8 85%);
+  }
+}
+
+.circle_wrapper {
+  position: absolute;
+  margin: auto;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  min-height: 260px;
+  max-height: 260px;
+  flex-direction: column;
+  gap: 50px;
+  margin: auto 0 104px;
+}
+
+
+@media (max-height: 950px) {
+  .title {
+    top: 20px;
+  }
+  .footer {
+    margin: auto 0 20px;
+  }
+}
+
+
+@media (max-width: $media-lg) {
+  .title {
+    top: 60px;
+    width: 120px;
+    padding-left: 20px;
+  }
+
+  .line_h {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    right: 20px;
+    width: auto;
+    height: 1px;
+  }
+
+  .footer {
+    margin: auto 0 20px;
+    justify-content: space-between;
+    min-height: 44%;
+  }
+
+  .title::before {
+    content: none;
+  }
+}

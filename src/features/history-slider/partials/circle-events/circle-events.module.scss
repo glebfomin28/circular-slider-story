@@ -1,0 +1,62 @@
+.circle {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  min-width: 530px;
+  max-width: 530px;
+  min-height: 530px;
+  border-radius: 50%;
+  border: 1px solid var(--color-line-circle);
+}
+
+
+.circle_item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #42567A;
+  font-size: 0;
+  transition: all 0.5s ease-in-out;
+  transform-origin: center center;
+  cursor: pointer;
+
+
+  &:hover, &.active  {
+    width: 56px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid #303E5880;
+    background: white;
+  }
+}
+
+.active_name {
+  position: absolute;
+  left: 440px;
+  top: 20px;
+  opacity: 0;
+  animation: faidUp 0.5s ease-in-out 0.3s forwards;
+}
+
+@keyframes faidUp {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

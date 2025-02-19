@@ -1,0 +1,29 @@
+@use "@/app/styles/media" as *;
+
+.circle_control_wrapper {
+    margin-bottom: auto;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    div {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media (max-width: $media-lg) {
+    .circle_control_wrapper {
+        position: fixed;
+        z-index: 1000;
+        inset: auto auto 20px 20px;
+        margin-bottom: 0;
+        padding: 0;
+        gap: 8px;
+
+        div {
+            gap: 8px;
+        }
+    }
+}

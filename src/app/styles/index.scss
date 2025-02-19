@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-bg);
+    overflow-x: hidden;
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-gray);
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}

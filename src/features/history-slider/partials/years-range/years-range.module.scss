@@ -1,0 +1,21 @@
+@use "@/app/styles/media" as *;
+
+.year_range {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 90px;
+}
+
+@media (max-width: $media-lg) {
+    .year_range {
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 40px;
+    }
+}

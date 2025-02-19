@@ -1,0 +1,52 @@
+@use "@/app/styles/media" as *;
+
+.arrow_button {
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: scale 0.1s ease-in-out;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &:active {
+    scale: 1.05;
+  }
+}
+
+.slider {
+  background: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 15px 0 #3877EE1A;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.history_event {
+  border: 1px solid var(--color-gray);
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: $media-lg) {
+  .history_event {
+    width: 25px;
+    height: 25px;
+
+    svg {
+      width: 9px;
+      height: 9px;
+    }
+  }
+}

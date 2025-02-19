@@ -1,0 +1,82 @@
+.bebas_neue {
+  font-family: "Bebas Neue", serif;
+  font-style: normal;
+}
+
+.pt_sans {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+}
+
+
+.gray {
+  color: var(--color-gray);
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+.pink {
+  color: var(--color-pink);
+}
+
+.violet {
+  color: var(--color-violet);
+}
+
+// size
+.size_200_56 {
+  font-size: var(--font-size-200-56);
+}
+
+.size_56_20 {
+  font-size: var(--font-size-56-20);
+}
+
+.size_25_16 {
+  font-size: var(--font-size-25-16);
+}
+
+.size_20_14 {
+  font-size: var(--font-size-20-14);
+}
+
+.size_14 {
+  font-size: var(--font-size-14);
+}
+
+
+// weight
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.thin {
+  font-weight: var(--font-weight-thin);
+}
+
+// align
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+// opacity
+.opacity {
+  opacity: 0.5;
+}
+
+.select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
